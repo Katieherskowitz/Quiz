@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katie Interactive Quiz/title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');
+
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            gap: 10px;
+            font-family: 'Raleway', sans-serif;
+            font-variation-settings: 'wght' 700;
+        }
+
+        .letter {
+            font-size: 20vw;
+            color: white;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .letter:hover {
+            transform: scale(1.2) rotate(10deg);
+            color: #ffeb3b;
+        }
+
+        .letter:active {
+            transform: scale(1.5) rotate(-10deg);
+            color: #ff5722;
+        }
+
+        @media (max-width: 450px) {
+            .letter {
+                font-size: 30vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="letter">K</span>
+        <span class="letter">A</span>
+        <span class="letter">T</span>
+        <span class="letter">I</span>
+        <span class="letter">E</span>
+    </div>
+</body>
+</html>
